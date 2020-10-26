@@ -43,7 +43,17 @@ namespace apitesting.Controllers
         [HttpGet("Get3")]
         public IEnumerable<int> Get3()
         {
-            return new int[] { 3, 12321, 1, 213, 213, 2112 };
+            return new int[] { 3, 12321, 1, 213, 213, 2111112 };
+        }
+        [HttpGet("Get4")]
+        public IEnumerable<int> Get4()
+        {
+            return new int[] { 3, 12321, 1, 213, 213, 2111112 };
+        }
+        [HttpGet("Get5")]
+        public IEnumerable<string> Get5()
+        {
+            return new string[] { "asdf", "11", "sadfsfd" };
         }
     }
 }
